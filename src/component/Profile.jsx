@@ -71,11 +71,7 @@ const Profile = () => {
           ))}
         </div>
 
-        <div className="mt-14 flex justify-center">
-          <button className="border border-gray-600 text-gray-300 px-8 py-3 rounded-md tracking-widest hover:bg-gray-900">
-            Manage Profiles
-          </button>
-        </div>
+       
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Nav from "./component/Nav";
 import Questions from "./component/Questions";
 import Reasons from "./component/Reasons";
 import Subscription from "./component/Subscription";
-import Trends from "./component/Trends";
+
 import Profile from "./component/Profile";
 import Recruiter from "./component/Recruiter";
 import About from "./component/About";
@@ -26,7 +26,7 @@ const App = () => {
           element={
             <div className="bg-black px-20 text-white">
               <Nav />
-              <Trends />
+              
               
               <Footer />
             </div>

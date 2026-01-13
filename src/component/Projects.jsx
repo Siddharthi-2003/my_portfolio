@@ -59,7 +59,7 @@ const ProjectsShowcase = () => {
       stats: { views: "6.1K", likes: 428 },
       links: {
         live: "#",
-        github: "#"
+        github: "https://github.com/Siddharthi-2003/Crypto_Tracker"
       }
     },
     {
@@ -73,7 +73,7 @@ const ProjectsShowcase = () => {
       stats: { views: "2.9K", likes: 156 },
       links: {
         live: "#",
-        github: "#"
+        github: "https://github.com/Siddharthi-2003/TechAlpha_Task1"
       }
     },
     {

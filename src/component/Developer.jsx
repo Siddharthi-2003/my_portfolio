@@ -22,10 +22,10 @@ const NavbarProfile = () => {
   };
     
   return (
-    <nav className="bg-black/95 backdrop-blur-sm border-b border-zinc-800 px-6 py-4 fixed w-full z-50">
+    <nav className="bg-black/95 backdrop-blur-sm border-b border-zinc-800 px-4 sm:px-6 py-4 fixed w-full z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-red-600 text-2xl font-bold">SIDDHARTHI SAHA</div>
-        <div className="flex gap-6 text-gray-300">
+        <div className="text-red-600 text-xl sm:text-2xl font-bold">SIDDHARTHI SAHA</div>
+        <div className="flex gap-2 sm:gap-6 text-gray-300 text-sm sm:text-base">
           <button onClick={() => navigate('/skateboard-about')} className="hover:text-red-500 transition-colors cursor-pointer">About</button>
           <a href="#projects" className="hover:text-red-500 transition-colors">Projects</a>
           <button onClick={() => navigate('/hire')} className="hover:text-red-500 transition-colors cursor-pointer">Contact</button>
@@ -33,14 +33,14 @@ const NavbarProfile = () => {
         <div className="relative">
           <button 
             onClick={() => setShowProfileDropdown(!showProfileDropdown)}
-            className="bg-red-600 px-3 py-1 rounded hover:bg-red-700 transition"
+            className="bg-red-600 px-2 sm:px-3 py-1 text-sm sm:text-base rounded hover:bg-red-700 transition"
           >
             Sign In
           </button>
           
           {/* Profile Dropdown */}
           {showProfileDropdown && (
-            <div className="absolute right-0 mt-2 w-64 bg-gray-900 border border-red-600 rounded-lg shadow-lg z-50">
+            <div className="absolute right-0 mt-2 w-56 sm:w-64 bg-gray-900 border border-red-600 rounded-lg shadow-lg z-50">
               <div className="p-4">
                 <h3 className="text-red-600 font-semibold mb-4 text-sm">SELECT PROFILE</h3>
                 <div className="space-y-3">
@@ -363,9 +363,9 @@ const Developer = () => {
         }}
       />
       
-      <div className="relative z-10 pt-20">
+      <div className="relative z-10 pt-16 sm:pt-20">
         {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
           <div className="relative overflow-hidden rounded-xl mb-12 group">
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 parallax"
@@ -376,25 +376,25 @@ const Developer = () => {
             ></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
             
-            <div className="relative z-10 py-32 px-8">
-              <h1 className="text-6xl md:text-7xl font-bold mb-4 text-white slide-up">
+            <div className="relative z-10 py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2 sm:mb-4 text-white slide-up">
                 Siddharthi Saha
               </h1>
-              <p className="text-2xl text-red-500 mb-4 slide-up-delay font-semibold">
+              <p className="text-lg sm:text-xl md:text-2xl text-red-500 mb-3 sm:mb-4 slide-up-delay font-semibold">
                 Software Developer @ LTIMindtree
               </p>
-              <p className="text-xl text-gray-300 slide-up-delay-2 max-w-3xl">
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 slide-up-delay-2 max-w-3xl">
                 <TypingEffect text="Full-stack developer specializing in React, Performance Optimization, and AI Integration. Building scalable enterprise solutions at Blueverse." speed={30} />
               </p>
               
-              <div className="flex gap-4 mt-8 slide-up-delay-3">
-                <a href="mailto:sahasiddharthi0@gmail.com" className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg transition-all transform hover:scale-105">
+              <div className="flex flex-wrap gap-2 sm:gap-4 mt-6 sm:mt-8 slide-up-delay-3">
+                <a href="mailto:sahasiddharthi0@gmail.com" className="px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-red-600 hover:bg-red-700 rounded-lg transition-all transform hover:scale-105">
                   📧 Contact
                 </a>
-                <a href="ttps://github.com/Siddharthi-2003" className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-all transform hover:scale-105">
+                <a href="ttps://github.com/Siddharthi-2003" className="px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-all transform hover:scale-105">
                   💻 GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/siddharthi-saha-269280259/" className="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-all transform hover:scale-105">
+                <a href="https://www.linkedin.com/in/siddharthi-saha-269280259/" className="px-3 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-all transform hover:scale-105">
                   🔗 LinkedIn
                 </a>
               </div>
@@ -402,33 +402,33 @@ const Developer = () => {
           </div>
           
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16">
             {[
               { label: "Projects Delivered", value: 15, suffix: "+" },
               { label: "Performance Gain", value: 60, suffix: "%" },
               { label: "Code Quality", value: 95, suffix: "%" },
               { label: "Client Satisfaction", value: 100, suffix: "%" }
             ].map((stat, i) => (
-              <div key={i} className="bg-zinc-900 rounded-lg p-6 text-center border border-zinc-800 hover:border-red-600/50 transition-all transform hover:scale-105">
-                <div className="text-4xl font-bold text-red-500 mb-2">
+              <div key={i} className="bg-zinc-900 rounded-lg p-3 sm:p-6 text-center border border-zinc-800 hover:border-red-600/50 transition-all transform hover:scale-105">
+                <div className="text-2xl sm:text-4xl font-bold text-red-500 mb-1 sm:mb-2">
                   <CounterAnimation end={stat.value} suffix={stat.suffix} />
                 </div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
+                <div className="text-gray-400 text-xs sm:text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
           
           {/* Skills Section */}
-          <h2 className="text-4xl font-bold mb-8 text-white">Core Expertise</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-16 stagger-animation">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-white mt-8 sm:mt-12">Core Expertise</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 stagger-animation">
             {skills.map((skill, i) => (
               <SkillCard key={i} skill={skill} index={i} />
             ))}
           </div>
           
           {/* Projects Section */}
-          <h2 id="projects" className="text-4xl font-bold mb-8 text-white">Featured Projects</h2>
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <h2 id="projects" className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-white mt-8 sm:mt-12">Featured Projects</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
             {projects.map((project, i) => (
               <div 
                 key={i}
@@ -436,11 +436,11 @@ const Developer = () => {
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative p-6 z-10">
-                  <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-500 transition-colors">
+                <div className="relative p-4 sm:p-6 z-10">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-white group-hover:text-red-500 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 mb-4 text-sm">{project.desc}</p>
+                  <p className="text-gray-400 mb-3 sm:mb-4 text-xs sm:text-sm">{project.desc}</p>
                   <div className="mb-4">
                     <span className="text-red-500 font-semibold text-xs">⭐ {project.highlight}</span>
                   </div>
@@ -457,20 +457,20 @@ const Developer = () => {
           </div>
           
           {/* Tech Stack */}
-          <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-8 border border-zinc-800">
-            <h2 className="text-3xl font-bold mb-6 text-white">Technology Stack</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-zinc-900/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 md:p-8 border border-zinc-800 mt-8 sm:mt-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-white">Technology Stack</h2>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               <div>
-                <h3 className="text-red-500 font-bold mb-3">Languages</h3>
-                <p className="text-gray-300 text-sm">C++, Python, JavaScript, HTML, CSS, PHP</p>
+                <h3 className="text-red-500 font-bold mb-2 sm:mb-3 text-sm sm:text-base">Languages</h3>
+                <p className="text-gray-300 text-xs sm:text-sm">C++, Python, JavaScript, HTML, CSS, PHP</p>
               </div>
               <div>
-                <h3 className="text-red-500 font-bold mb-3">Frameworks</h3>
-                <p className="text-gray-300 text-sm">React.js, Node.js, Redux, Bootstrap, Material-UI, OpenCV</p>
+                <h3 className="text-red-500 font-bold mb-2 sm:mb-3 text-sm sm:text-base">Frameworks</h3>
+                <p className="text-gray-300 text-xs sm:text-sm">React.js, Node.js, Redux, Bootstrap, Material-UI, OpenCV</p>
               </div>
               <div>
-                <h3 className="text-red-500 font-bold mb-3">AI & Cloud</h3>
-                <p className="text-gray-300 text-sm">OpenAI API, Azure AI, AWS Bedrock, MLOps, Docker</p>
+                <h3 className="text-red-500 font-bold mb-2 sm:mb-3 text-sm sm:text-base">AI & Cloud</h3>
+                <p className="text-gray-300 text-xs sm:text-sm">OpenAI API, Azure AI, AWS Bedrock, MLOps, Docker</p>
               </div>
             </div>
           </div>
