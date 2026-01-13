@@ -163,11 +163,11 @@ const HireMePage = () => {
                 <div className="absolute -bottom-8 left-8 right-8 bg-gradient-to-r from-red-600 to-red-500 p-6 rounded-2xl shadow-2xl shadow-red-600/50">
                   <div className="grid grid-cols-3 gap-4 text-center">
                     <div>
-                      <div className="text-3xl font-bold">4+</div>
+                      <div className="text-3xl font-bold">1</div>
                       <div className="text-sm text-red-100">Years Experience</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">15+</div>
+                      <div className="text-3xl font-bold">10+</div>
                       <div className="text-sm text-red-100">Projects</div>
                     </div>
                     <div>
