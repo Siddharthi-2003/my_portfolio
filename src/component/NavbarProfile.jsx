@@ -64,7 +64,7 @@ const NavbarProfile = () => {
                 onClick={() => setShowProfileDropdown(!showProfileDropdown)}
                 className="bg-red-600 px-4 py-2 rounded hover:bg-red-700 transition text-sm font-medium"
               >
-                Sign In
+                Profile
               </button>
 
               {/* Desktop Profile Dropdown */}
